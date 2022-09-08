@@ -1,0 +1,58 @@
+body {
+  background: #000;
+}
+
+/*Começo da estilização da barra*/
+.lista {
+  margin-left: 50px;
+  margin-right: 400px;
+}
+
+.tam-icon {
+  width: 20px;
+  height: 20px;
+}
+
+div.search-box {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 0;
+
+  background: rgb(59, 59, 59);
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input.search-text {
+  background: none;
+  border: 0;
+  outline: 0;
+  color: aliceblue;
+
+  padding: 0;
+
+  transition: 0.5s;
+
+  font-size: 14px;
+
+  width: 0;
+}
+
+a.search-btn {
+  width: 30px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.search-box:hover>input.search-text {
+  width: 500px;
+}
+/*fim da estilização*/
