@@ -28,8 +28,9 @@ nav.main-menu.expanded {
 }
 
 .main-menu {
-    background: #212121;
-    border-right: 1px solid #e5e5e5;
+    background: #ffffff;
+    border-right: 1px solid #00000010;
+    border-radius: 5px 5px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -58,7 +59,7 @@ nav.main-menu.expanded {
     display: table;
     border-collapse: collapse;
     border-spacing: 0;
-    color: #999;
+    color: rgb(0, 0, 0);
     font-family: arial;
     font-size: 14px;
     text-decoration: none;
@@ -131,7 +132,7 @@ nav.main-menu li.active>a,
 .no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
 .dashboard-page nav.dashboard-menu ul li.active a {
     color: #fff;
-    background-color: #5fa2db;
+    background-color: #000000;
 }
 
 .area {
@@ -153,7 +154,7 @@ nav.main-menu li.active>a,
     top: 0;
     left: 0;
 
-    background-color: rgb(97, 69, 69);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 200%;
 
@@ -197,7 +198,8 @@ ul>li {
 }
 
 footer {
-    background-color: #212121;
+    background-color: #000000;
+    color: #ffffff;
     width: 100%;
     height: 100px;
     position: fixed;
@@ -214,5 +216,5 @@ footer>div {
 
 .Link a {
     text-decoration: none;
-    color: gray;
+    color: rgb(255, 255, 255);
 }
