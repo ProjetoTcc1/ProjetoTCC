@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/comment.css">
 </head>
 
 <body>
@@ -100,7 +101,7 @@
       <div class="publi">
         <div class="paragrafo">
           <h1>GOAT</h1>
-          
+
           <p>GOAT (Greatest Of All Time) é uma expressão muito utilizada nos Estados Unidos e no mundo todo que serve
             para
             referênciar quando uma
@@ -113,35 +114,30 @@
           <i class="LikePost fa fa-thumbs-o-down"></i>
           <i class=" denuncia fa fa-flag-o" aria-hidden="true"></i>
           <a href="abacomentario.html"><i class=" CommentIcon fa fa-comment-o" aria-hidden="true"></i></a>
-          <!-- <div>
-            <input class=" form-row coment_input" type="text" placeholder="Escreva seu comentário">
-            <button class="coment_button">Comentar</button>
-          </div> -->
+          <section id="app">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <div class="comment">
+                <p v-for="items in item" v-text="items"></p>
+                  </div><!--End Comment-->
+                  </div><!--End col -->
+                  </div><!-- End row -->
+              <div class="row">
+                <div class="col-6">
+              
+              <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                  <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                </div><!-- End col -->
+              </div><!--End Row -->
+            </div><!--End Container -->
+          </section><!-- end App -->
         </div>
       </div>
 
       <br>
 
-      <div class="publi">
-        <h1>WORD</h1>
-        <div class="paragrafo">
-          <p>Word (palavra) pode ser usado para indicar o quão impressionado a pessoa está
-          </p>
-          <h3>Exemplo</h3>
-          <i>"Aquele negócio lá deu certo!!"</i>
-          <br>
-          <i>"Word??(ta falando sério??)"</i>
-          <p><b>Por:</b> natan149 22, Novembro, 2022</p>
-          <i class=" LikePost fa fa-thumbs-up"></i>
-          <i class="LikePost fa fa-thumbs-down"></i>
-          <i class=" denuncia fa fa-flag" aria-hidden="true"></i>
-          <div>
-            <input class=" form-row coment_input" type="text" placeholder="Escreva seu comentário">
-            <button class="coment_button">Comentar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>

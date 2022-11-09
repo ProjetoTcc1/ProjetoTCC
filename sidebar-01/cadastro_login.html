@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/cadastro.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
       <div class="p-4 pt-5">
         <a href="alterar.html"><img width="1px" class="img logo rounded-circle mb-4" src="images/quavo.jpg"></a>
         <ul class="list-unstyled components mb-5">
-          <li class="active">
+          <li>
             <a href="index.html" class="dropdown-toggle">INÍCIO</a>
           </li>
           <li>
@@ -86,63 +86,70 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
               <div class="box">
-                <form name="search">
+                <section name="search">
                   <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-                </form>
+                </section>
                 <i class="fa fa-search"></i>
               </div>
             </ul>
           </div>
         </div>
       </nav>
-
-      <h2 class="mb-4">INÍCIO</h2>
-      <div class="publi">
-        <div class="paragrafo">
-          <h1>GOAT</h1>
-          
-          <p>GOAT (Greatest Of All Time) é uma expressão muito utilizada nos Estados Unidos e no mundo todo que serve
-            para
-            referênciar quando uma
-            pessoa é a melhor do mundo naquilo que ela faz.
-          </p>
-          <h3>Exemplo</h3>
-          <i>"Lionel Messi é o GOAT do futebol"</i>
-          <p><b>Por: </b>luis4PF 25, Novembro, 2022</p>
-          <i class=" LikePost fa fa-thumbs-o-up"></i>
-          <i class="LikePost fa fa-thumbs-o-down"></i>
-          <i class=" denuncia fa fa-flag-o" aria-hidden="true"></i>
-          <a href="abacomentario.html"><i class=" CommentIcon fa fa-comment-o" aria-hidden="true"></i></a>
-          <!-- <div>
-            <input class=" form-row coment_input" type="text" placeholder="Escreva seu comentário">
-            <button class="coment_button">Comentar</button>
-          </div> -->
-        </div>
-      </div>
-
       <br>
 
-      <div class="publi">
-        <h1>WORD</h1>
-        <div class="paragrafo">
-          <p>Word (palavra) pode ser usado para indicar o quão impressionado a pessoa está
-          </p>
-          <h3>Exemplo</h3>
-          <i>"Aquele negócio lá deu certo!!"</i>
-          <br>
-          <i>"Word??(ta falando sério??)"</i>
-          <p><b>Por:</b> natan149 22, Novembro, 2022</p>
-          <i class=" LikePost fa fa-thumbs-up"></i>
-          <i class="LikePost fa fa-thumbs-down"></i>
-          <i class=" denuncia fa fa-flag" aria-hidden="true"></i>
-          <div>
-            <input class=" form-row coment_input" type="text" placeholder="Escreva seu comentário">
-            <button class="coment_button">Comentar</button>
+      <h2>Aqui você pode realizar seu Login ou seu Cadastro!</h2>
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form  action="#">
+            <h1>Crie sua conta</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <span>ou</span>
+            <input type="text" placeholder="Nome de Usuário" />
+            <input type="email" placeholder="Nome" />
+            <input type="email" placeholder="E-mail" />
+            <input type="number" placeholder="Celular" />
+            <input type="date" />
+            <input type="text" placeholder="País" />
+            <input type="password" placeholder="Password" />
+            <a><button>Cadastrar-se</button></a>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Entrar</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>ou use sua conta</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Esqueceu sua senha?</a>
+            <a href="index.html"><button>Entrar</button></a>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Para Entrar</h1>
+              <p>Pressione o botão abaixo para realizar o seu login</p>
+              <button class="ghost" id="signIn">Entrar</button>
+              <br></br>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Olá!</h1>
+              <p>Pressione o botão abaixo pra iniciar seu cadastro</p>
+              <button class="ghost" id="signUp">Cadastrar-se</button>
+            </div>
           </div>
         </div>
-      </div>
+      </div>      
     </div>
 
+    <script type="text/javascript" src="js/cadastro.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
