@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Sidebar 01</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="p-4 pt-5">
+        <a href="alterar.html"><img width="1px" class="img logo rounded-circle mb-4" src="images/quavo.jpg"></a>
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="index.html" class="dropdown-toggle">INÍCIO</a>
+          </li>
+          <li>
+            <a href="publicação.html">ADICIONAR</a>
+          </li>
+          <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PESQUISA</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="#">Aleatória</a>
+              </li>
+              <li>
+                <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">Primeira Letra</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                    <a href="#">A B C D E F</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="sobre.html">SOBRE</a>
+          </li>
+          <li>
+            <a href="minhaspubli.html">MINHAS PUBLICAÇÕES</a>
+          </li>
+          <li>
+            <a href="indexlogout.html">SAIR</a>
+          </li>
+        </ul>
+
+        <div class="footer">
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> Todos os direitos reservados Street Slang |
+            <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+              target="_blank">Colorlib.com</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <div class="box">
+                <section name="search">
+                  <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                </section>
+                <i class="fa fa-search"></i>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+
+      <h2>Aqui você pode realizar seu Login ou seu Cadastro!</h2>
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form  action="#">
+            <h1>Crie sua conta</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <span>ou</span>
+            <input type="text" placeholder="Nome de Usuário" />
+            <input type="email" placeholder="Nome" />
+            <input type="email" placeholder="E-mail" />
+            <input type="number" placeholder="Celular" />
+            <input type="date" />
+            <input type="text" placeholder="País" />
+            <input type="password" placeholder="Password" />
+            <a><button>Cadastrar-se</button></a>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Entrar</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>ou use sua conta</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Esqueceu sua senha?</a>
+            <a href="index.html"><button>Entrar</button></a>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Para Entrar</h1>
+              <p>Pressione o botão abaixo para realizar o seu login</p>
+              <button class="ghost" id="signIn">Entrar</button>
+              <br></br>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Olá!</h1>
+              <p>Pressione o botão abaixo pra iniciar seu cadastro</p>
+              <button class="ghost" id="signUp">Cadastrar-se</button>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <script type="text/javascript" src="js/cadastro.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
