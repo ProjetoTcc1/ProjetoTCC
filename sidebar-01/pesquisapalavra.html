@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/publi.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -18,32 +18,30 @@
   <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar">
       <div class="p-4 pt-5">
-        <img width="1px" class="img logo rounded-circle mb-4" src="images/quavo.jpg">
+        <a href="alterar.html"><img width="1px" class="img logo rounded-circle mb-4" src="images/quavo.jpg"></a>
         <ul class="list-unstyled components mb-5">
-          <li >
+          <li>
             <a href="index.html" class="dropdown-toggle">INÍCIO</a>
           </li>
-          <li class="active">
-            <a href="publicação/index.html">ADICIONAR</a>
-          </li>
           <li>
+            <a href="publicação.html">ADICIONAR</a>
+          </li>
+          <li class="active">
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PESQUISA</a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
               <li>
-                <a href="#">Aleatória</a>
+                <a href="pesquisarandom.html">Aleatória</a>
               </li>
-              <li>
-                <a href="#pageSubmenu" data-toggle="collapse" class="dropdown-toggle">Primeira Letra</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                  <li>
-                    <a href="#">A B C D E F</a>
-                  </li>
-                </ul>
+              <li class="active">
+                <a href="pesquisapalavra.html">Primeira Letra</a>
               </li>
             </ul>
           </li>
           <li>
             <a href="sobre.html">SOBRE</a>
+          </li>
+          <li>
+            <a href="minhaspubli.html">MINHAS PUBLICAÇÕES</a>
           </li>
           <li>
             <a href="indexlogout.html">SAIR</a>
@@ -86,41 +84,55 @@
                 <form name="search">
                   <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
                 </form>
-                <i class="fas fa-search"></i>
+                <i class="fa fa-search"></i>
               </div>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div class="login-box">
-        <br>
-        <h2>Aqui é onde a mágica acontece, você pode atribuir uma definição a uma palavra de
-          acordo com seu conhecimento</h2>
-        <h3>É importante que você leia as <a href="sobre.html"><i>diretrizes</i></a> do nosso site antes de realizar a publicação</h3>
-        <form>
-          <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Palavra ou Expressão</label>
-          </div>
-          <div class="user-box">
-            <textarea type="text" name="" required></textarea>
-            <label>Escreva sua definição</label>
-          </div>
-          <div class="user-box">
-            <textarea type="text" name="" required></textarea>
-            <label>Contexto que a palavra ou expressão se encaixa</label>
-          </div>
-          <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Inserir tags</label>
-          </div>
-          <a href="#">
-            <span></span>
-            <span></span>
-            ENVIAR
-          </a>
-        </form>
+      <h2 class="mb-4">PESQUISA ALEATÓRIA</h2>
+      <h3>LETRA D</h3>
+      <div class="publi">
+        <div class="paragrafo">
+          <h1>DAMN</h1>
+
+          <p>DAMN (caramba) é usado quando algo surpreendente acontece, pode ser usado também quando algo de ruim
+            acontece.
+          </p>
+          <h3>Exemplo</h3>
+          <i>"Eu perdi meu celular DAMN it"</i>
+          <p><b>Por: </b>luis4PF 25, Novembro, 2022</p>
+          <i class=" LikePost fa fa-thumbs-o-up"></i>
+          <i class="LikePost fa fa-thumbs-o-down"></i>
+          <a href="abacomentario.html"><i class=" CommentIcon fa fa-comment-o" style="font-size: 38px;"
+              aria-hidden="true"></i></a>
+          <i class=" denuncia fa fa-flag-o" aria-hidden="true"></i>
+
+          <!-- <div>
+            <input class=" form-row coment_input" type="text" placeholder="Escreva seu comentário">
+            <button class="coment_button">Comentar</button>
+          </div> -->
+        </div>
+      </div>
+
+      <br>
+
+      <div class="publi">
+        <h1>DOG</h1>
+        <div class="paragrafo">
+          <p>DOG (cachorro) pode ser usado para se referênciar a uma pessoa que é amigo seu a muito tempo.
+            Serve também de comprimento entre amigos
+          </p>
+          <h3>Exemplo</h3>
+          <i>"Eae Mano (What´s up Dog)"</i>
+          <p><b>Por:</b> natan149 22, Novembro, 2022</p>
+          <i class=" LikePost fa fa-thumbs-o-up"></i>
+          <i class="LikePost fa fa-thumbs-o-down"></i>
+          <a href="abacomentario.html"><i class=" CommentIcon fa fa-comment-o" style="font-size: 38px;"
+              aria-hidden="true"></i></a>
+          <i class=" denuncia fa fa-flag-o" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
 

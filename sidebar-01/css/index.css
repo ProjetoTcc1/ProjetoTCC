@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 
+table{
+  width: 800px;
+  height: 100px;
+  box-shadow: 10px 10px rgb(255, 251, 0);
+}
+
+tr:hover{
+  background-color: #000000;
+ 
+  color: white;
+  
+}
+
+.inputRelatorio{
+  box-shadow: 1px 1px 20px 1px #000000;
+  border-radius: 3px;
+  align-items: center;
+  height: 30px;
+  width: 300px;
+  margin-left: 300px;
+  border: none;
+}
+
 .alt_button {
   border-radius: 20px;
   border: 1px solid #000000;

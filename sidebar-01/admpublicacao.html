@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/publi.css">
 </head>
 
 <body>
@@ -17,12 +18,12 @@
   <div class="wrapper d-flex align-items-stretch">
     <nav id="sidebar">
       <div class="p-4 pt-5">
-        <a href="cadastro.html"><img width="1px" class="img logo rounded-circle mb-4" src="images/user.png"></a>
+        <a href="alterar.html"><img width="1px" class="img logo rounded-circle mb-4" src="#"></a>
         <ul class="list-unstyled components mb-5">
-          <li class="active">
-            <a href="#homeSubmenu" class="dropdown-toggle">INÍCIO</a>
+          <li >
+            <a href="index.html" class="dropdown-toggle">INÍCIO</a>
           </li>
-          <li>
+          <li class="active">
             <a href="publicação/index.html">ADICIONAR</a>
           </li>
           <li>
@@ -42,10 +43,25 @@
             </ul>
           </li>
           <li>
-            <a href="index.html">SOBRE</a>
+            <a href="sobre.html">SOBRE</a>
           </li>
           <li>
-            <a href="cadastro.html">LOGAR</a>
+            <a href="minhaspubli.html">MINHAS PUBLICAÇÕES</a>
+          </li>
+          <li>
+            <a href="#pageADM" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">ÁREA
+              ADMINISTRATIVA</a>
+            <ul class="collapse list-unstyled" id="pageADM">
+              <li>
+                <a href="denuncia.html">Denúncia</a>
+              </li>
+              <li>
+                <a href="admrelatorio.html">Relatórios</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="indexlogout.html">SAIR</a>
           </li>
         </ul>
 
@@ -53,7 +69,7 @@
           <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <script>document.write(new Date().getFullYear());</script> Todos os direitos reservados Street Slang |
             <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
               target="_blank">Colorlib.com</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -85,47 +101,41 @@
                 <form name="search">
                   <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
                 </form>
-                <i class="fas fa-search"></i>
+                <i class="fa fa-search"></i>
               </div>
             </ul>
           </div>
         </div>
       </nav>
 
-      <h2 class="mb-4">INÍCIO</h2>
-      <div class="publi">
-        <div class="paragrafo">
-          <h1>GOAT</h1>
-          <p>GOAT (Greatest Of All Time) é uma expressão muito utilizada nos Estados Unidos e no mundo todo que serve
-            para
-            referênciar quando uma
-            pessoa é a melhor do mundo naquilo que ela faz.
-          </p>
-          <h3>Exemplo</h3>
-          <i>"Lionel Messi é o GOAT do futebol"</i>
-          <p><b>Por: </b>luis4PF 25, Novembro, 2022</p>
-          <i class=" LikePost fa fa-thumbs-up"></i>
-          <i class="LikePost fa fa-thumbs-down"></i>
-          <i class=" denuncia fa fa-flag" aria-hidden="true"></i>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="publi">
-        <h1>WORD</h1>
-        <div class="paragrafo">
-          <p>Word (palavra) pode ser usado para indicar o quão impressionado a pessoa está
-          </p>
-          <h3>Exemplo</h3>
-          <i>"Aquele negócio lá deu certo!!"</i>
-          <br>
-          <i>"Word??(ta falando sério??)"</i>
-          <p><b>Por:</b> natan149 22, Novembro, 2022</p>
-          <i class=" LikePost fa fa-thumbs-up"></i>
-          <i class="LikePost fa fa-thumbs-down"></i>
-          <i class=" denuncia fa fa-flag" aria-hidden="true"></i>
-        </div>
+      <div class="login-box">
+        <br>
+        <h2>Aqui é onde a mágica acontece, você pode atribuir uma definição a uma palavra de
+          acordo com seu conhecimento</h2>
+        <h3>É importante que você leia as <a href="sobre.html"><i>diretrizes</i></a> do nosso site antes de realizar a publicação</h3>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Palavra ou Expressão</label>
+          </div>
+          <div class="user-box">
+            <textarea type="text" name="" required></textarea>
+            <label>Escreva sua definição</label>
+          </div>
+          <div class="user-box">
+            <textarea type="text" name="" required></textarea>
+            <label>Contexto que a palavra ou expressão se encaixa</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Inserir tags</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            ENVIAR
+          </a>
+        </form>
       </div>
     </div>
 
