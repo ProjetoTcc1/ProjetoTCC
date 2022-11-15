@@ -217,20 +217,36 @@
               <i class=" denuncia fa fa-flag-o" aria-hidden="true"></i>
             </button>
 
-            <!-- The Modal -->
             <div id="myModal" class="modal">
               <!-- Modal content -->
               <div class="modal-content">
                 <div class="modal-header">
-                  <h2>Denúncia</h2>
+                  <h2 style="text-align: center;">DENÚNCIA</h2>
                   <span class="close">&times;</span>
                 </div>
                 <div class="modal-body">
-                  <p>Some text in the Modal Body</p>
-                  <p>Some other text...</p>
+                  <h3>Informe o motivo da denúncia</h3>
+                  <form action="/action_page.php">
+
+                    <div class="checkboxModal">
+                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <label for="vehicle1"> Conteúdo ofensivo</label><br>
+                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                      <label for="vehicle2"> Contém informações pessoais</label><br>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3"> Foge da realidade</label><br>
+                    </div>
+                    <div>
+                      <input class="alt_input" type="text"
+                        placeholder="não é uma das opções acima? Digite o seu motivo" />
+                    </div>
                 </div>
+                <br>
                 <div class="modal-footer">
+                  <input class="inputDenuncia" type="submit" value="Enviar">
                 </div>
+                </form>
+
               </div>
 
             </div>
