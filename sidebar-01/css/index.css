@@ -52,7 +52,7 @@ tr:hover{
 input[type="file"] {
   display: none;
 }
-label {
+labell {
   padding: 5px 1px;
   width: 122px;
   height: 40px;
@@ -69,38 +69,6 @@ label {
   margin-left: 136px
 }
 
-.coment{
-  width: 600px;
-  height: 50px;
-  background-color: #ffff00;
-  border: none;
-  
-}
-
-.coment_button{
-  position: absolute;
-  background-color: rgb(255, 253, 253);
-  box-shadow: 1px 2px 3px 1px #00000031;
-  border-color: #ffffff00;
-  border-radius: 5px;
-  padding: 12px 14px;
-  margin-left: 230px;
-  margin-top: 10px;
-  width: 103px;
-}
-
-.coment_input{
-  position: absolute;
-  background-color: rgb(255, 253, 253);
-  box-shadow: 1px 2px 3px 1px #00000031;
-  border: none;
-  padding: 12px 15px;
-  margin: 8px 120px;
-  width: 400px;
-  border-radius: 5px;
-  margin-top: 10px;
-  float: left;
-}
 
 .alt_button:hover {
   border: 1px solid #000000;
